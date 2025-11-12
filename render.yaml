@@ -1,0 +1,15 @@
+# render.yaml (optional)
+services:
+  - type: web
+    name: Book_RAG_backend
+    env: python
+    plan: starter
+    buildCommand: |
+      chmod +x start.sh
+      pip install -r requirements.txt
+    startCommand: ./start.sh
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+      - key: PORT
+        value: "8000"
