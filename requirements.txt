@@ -1,0 +1,75 @@
+# Core Framework
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+
+# AI/ML and Orchestration
+crewai
+groq
+sentence-transformers
+faiss-cpu
+pinecone
+langchain
+langchain-community
+
+# Database
+sqlalchemy
+aiosqlite
+alembic
+databases[sqlite]
+redis
+
+# Task Queue
+celery
+flower
+
+# Web Scraping
+beautifulsoup4
+scrapy
+requests
+selenium
+playwright
+
+# Content Processing
+reportlab
+weasyprint
+ebooklib
+pypdf
+python-docx
+markdown
+
+# Image Generation
+stability-sdk
+openai
+#pillow
+
+# Frontend
+streamlit
+plotly
+matplotlib
+seaborn
+
+# Utilities
+python-multipart
+jinja2
+python-jose[cryptography]
+passlib[bcrypt]
+python-dotenv
+httpx
+aiofiles
+typing-extensions
+
+# Development
+pytest
+#pytest-asynci
+black
+flake8
+mypy
+
+# Monitoring
+prometheus-client
+grafana-api
+
+# Docker
+gunicorn
