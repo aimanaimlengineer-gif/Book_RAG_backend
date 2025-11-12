@@ -1,75 +1,103 @@
+# ========================================
 # Core Framework
-fastapi
-uvicorn[standard]
-pydantic
-pydantic-settings
+# ========================================
+numpy<2.0
+fastapi==0.121.1
+uvicorn[standard]==0.38.0
+pydantic==2.12.0
+pydantic-settings==2.12.0
 
+# ========================================
 # AI/ML and Orchestration
-crewai
-groq
-sentence-transformers
-faiss-cpu
-pinecone
-langchain
-langchain-community
+# ========================================
+crewai==1.4.1
+groq==0.33.0
+sentence-transformers==5.1.2
+faiss-cpu==1.8.0
+pinecone==7.0.2
+langchain==1.0.5
+langchain-core==1.0.4
+langchain-classic==1.0.0
+langchain-community==0.4.1
 
+# ========================================
 # Database
-sqlalchemy
-aiosqlite
-alembic
-databases[sqlite]
-redis
+# ========================================
+sqlalchemy==2.0.44
+aiosqlite==0.20.0
+alembic==1.14.1
+databases[sqlite]==0.9.0
+redis==5.1.0
 
+# ========================================
 # Task Queue
-celery
-flower
+# ========================================
+celery==5.6.0rc1
+flower==2.0.1
 
+# ========================================
 # Web Scraping
-beautifulsoup4
-scrapy
-requests
-selenium
-playwright
+# ========================================
+beautifulsoup4==4.14.0
+scrapy==2.13.3
+requests==2.32.5 
+selenium==4.25.0
+playwright==1.55.0
 
+# ========================================
 # Content Processing
-reportlab
-weasyprint
-ebooklib
-pypdf
-python-docx
-markdown
+# ========================================
+reportlab==4.0.9
+weasyprint==61.0
+ebooklib==0.20    # ✅ Latest available version
+pypdf==4.2.0
+python-docx==1.0.1
+markdown==3.6.0
 
+# ========================================
 # Image Generation
-stability-sdk
-openai
-#pillow
+# ========================================
+stability-sdk==0.8.6 
+openai==1.99.9
 
+# Note: pillow is commented in original requirements
+
+# ========================================
 # Frontend
-streamlit
-plotly
-matplotlib
-seaborn
+# ========================================
+streamlit==1.51.0
+plotly==5.24.1
+matplotlib==3.9.2
+seaborn==0.13.2
 
+# ========================================
 # Utilities
-python-multipart
-jinja2
-python-jose[cryptography]
-passlib[bcrypt]
-python-dotenv
-httpx
-aiofiles
-typing-extensions
+# ========================================
+python-multipart==0.0.9
+jinja2==3.1.4
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.1.1  # ✅ Satisfies all requirements
+httpx==0.27.1
+aiofiles==24.1.0
+typing-extensions==4.15.0
 
+# ========================================
 # Development
-pytest
-#pytest-asynci
-black
-flake8
-mypy
+# ========================================
+pytest==9.0.0
+# pytest-asyncio is commented in original requirements
+black==25.11.0
+flake8==7.1.1
+mypy==1.18.1
 
+# ========================================
 # Monitoring
-prometheus-client
-grafana-api
+# ========================================
+prometheus-client==0.21.0
+grafana-api==1.0.3
 
-# Docker
-gunicorn
+# ========================================
+# Docker/Deployment
+# ========================================
+gunicorn==23.0.0
