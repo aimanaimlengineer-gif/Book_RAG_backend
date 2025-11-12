@@ -12,8 +12,8 @@ class Settings(BaseSettings):
     debug: bool = False
     log_level: str = "INFO"
     log_format: str = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-    host: str = "0.0.0.0"
-    port: int = 8000
+    #host: str = "0.0.0.0"
+    #port: int = 8000
     workers: int = 1
     cors_origins: List[str] = ["*"]
 
